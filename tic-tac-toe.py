@@ -31,9 +31,9 @@ def user_input_two():
     if [x, y] in co_ordinate:
         return [x, y], 1
 
-#
-# keep_going = True
-# while keep_going:
-#     user_input_one()
+
+keep_going = True
+while keep_going:
+    user_input_one()
 
 
