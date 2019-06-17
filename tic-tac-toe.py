@@ -1,5 +1,8 @@
 """
 The Algorithm:
+Take alternate inputs and keep the game on while
+any of the 8 lists have a consistent consecutive value of
+either a 0 or a 1. When they do the respective player wins
 """
 
 co_ordinate = [[0, 1], [1, 0], [2, 0], [0, 1], [1, 1], [2, 1], [0, 2], [1, 2], [2, 2]]
