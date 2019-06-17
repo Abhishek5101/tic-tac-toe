@@ -19,20 +19,19 @@ co_ordinate_for_use = [co_ordinate_1, co_ordinate_2, co_ordinate_3, co_ordinate_
                        co_ordinate_5, co_ordinate_6, co_ordinate_7, co_ordinate_8]
 
 positions = [i for i in range(9)]
+new_list = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 
-def user_input_one():
-    x = int(input("X-co_ordinate: "))
-    y = int(input("Y-co_ordinate: "))
-    if [x, y] in co_ordinate:
-        return [x, y], 0
+def user_input_one(position, value=0):
+    position = int(input("Player 1: Enter position: "))
+    if position in positions:
+        return position, value
 
 
-def user_input_two():
-    x = int(input("X-co_ordinate: "))
-    y = int(input("Y-co_ordinate: "))
-    if [x, y] in co_ordinate:
-        return [x, y], 1
+def user_input_two(position, value=1):
+    position = int(input("Player 2: Enter position:: "))
+    if position in positions:
+        return position, value
 
 
 def check_game():
