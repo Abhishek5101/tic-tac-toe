@@ -22,13 +22,13 @@ positions = [i for i in range(9)]
 new_list = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 
-def user_input_one(position, value=0):
+def user_input_one(value=0):
     position = int(input("Player 1: Enter position: "))
     if position in positions:
         return position, value
 
 
-def user_input_two(position, value=1):
+def user_input_two(value=1):
     position = int(input("Player 2: Enter position:: "))
     if position in positions:
         return position, value
