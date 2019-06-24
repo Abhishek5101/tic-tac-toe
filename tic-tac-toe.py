@@ -29,19 +29,19 @@ def user_input_two():
     co_ordinate[position] = 1
 
 
-def check_game():
+def game_over():
     for i in co_ordinate_to_check:
         if i == [1, 1, 1]:
-            return "2 wins"
+            print("2 wins")
         elif i == [0, 0, 0]:
-            return "1 wins"
+            print("1 wins")
 
 
-keep_going = True
-while keep_going:
-    user_input_one()
-    user_input_two()
-    check_game()
-    if check_game():
-        keep_going = False
+# keep_going = True
+# while keep_going:
+#     user_input_one()
+#     user_input_two()
+#     game_over()
+#     if game_over():
+#         keep_going = False
 
