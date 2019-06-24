@@ -22,13 +22,11 @@ co_ordinate_to_check = [co_ordinate_1, co_ordinate_2, co_ordinate_3, co_ordinate
 def user_input_one():
     position = int(input("Player 1: Enter position: "))
     co_ordinate[position] = 0
-    print(co_ordinate)
 
 
 def user_input_two():
     position = int(input("Player 2: Enter position: "))
     co_ordinate[position] = 1
-    print(co_ordinate)
 
 
 def game_over():
@@ -42,9 +40,11 @@ def game_over():
 keepgoing = True
 while keepgoing:
     user_input_one()
+    print(co_ordinate, co_ordinate_to_check)
     if game_over():
         keepgoing = False
     user_input_two()
+    print(co_ordinate, co_ordinate_to_check)
     if game_over():
         keepgoing = False
 
