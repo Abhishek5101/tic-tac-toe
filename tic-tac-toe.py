@@ -15,8 +15,8 @@ co_ordinate_6 = [co_ordinate[2], co_ordinate[5], co_ordinate[8]]
 co_ordinate_7 = [co_ordinate[0], co_ordinate[4], co_ordinate[8]]
 co_ordinate_8 = [co_ordinate[2], co_ordinate[4], co_ordinate[6]]
 
-co_ordinate_for_use = [co_ordinate_1, co_ordinate_2, co_ordinate_3, co_ordinate_4,
-                       co_ordinate_5, co_ordinate_6, co_ordinate_7, co_ordinate_8]
+co_ordinate_to_check = [co_ordinate_1, co_ordinate_2, co_ordinate_3, co_ordinate_4,
+                        co_ordinate_5, co_ordinate_6, co_ordinate_7, co_ordinate_8]
 
 
 def user_input_one():
@@ -30,7 +30,7 @@ def user_input_two():
 
 
 def check_game():
-    for i in co_ordinate_for_use:
+    for i in co_ordinate_to_check:
         if i == [1, 1, 1]:
             return "2 wins"
         elif i == [0, 0, 0]:
