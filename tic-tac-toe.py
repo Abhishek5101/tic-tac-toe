@@ -5,7 +5,7 @@ any of the 8 lists have a consistent consecutive value of
 either a 0 or a 1. When they do the respective player wins
 """
 
-co_ordinate = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+co_ordinate = [7, 7, 7, 7, 7, 7, 7, 7, 7]
 co_ordinate_1 = [co_ordinate[0], co_ordinate[1], co_ordinate[2]]
 co_ordinate_2 = [co_ordinate[3], co_ordinate[4], co_ordinate[5]]
 co_ordinate_3 = [co_ordinate[6], co_ordinate[7], co_ordinate[8]]
@@ -37,11 +37,12 @@ def game_over():
             print("1 wins")
 
 
-# keep_going = True
-# while keep_going:
-#     user_input_one()
-#     user_input_two()
-#     game_over()
-#     if game_over():
-#         keep_going = False
+keepgoing = True
+while keepgoing:
+    user_input_one()
+    if game_over():
+        keepgoing = False
+    user_input_two()
+    if game_over():
+        keepgoing = False
 
