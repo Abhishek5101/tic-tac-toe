@@ -10,12 +10,14 @@ co_ordinate = [7, 7, 7, 7, 7, 7, 7, 7, 7]
 
 def user_input_one():
     position = int(input("Player 1: Enter position: "))
-    co_ordinate.insert(position, 0)
+    # co_ordinate.insert(position, 0)
+    return position
 
 
 def user_input_two():
     position = int(input("Player 2: Enter position: "))
-    co_ordinate.insert(position, 1)
+    # co_ordinate.insert(position, 1)
+    return position
 
 
 co_ordinate_1 = [co_ordinate[0], co_ordinate[1], co_ordinate[2]]
@@ -42,11 +44,13 @@ def game_over():
 
 keepgoing = True
 while keepgoing:
-    user_input_one()
+    position = user_input_one()
+    co_ordinate[position] = 0
     print(co_ordinate)
     if game_over():
         keepgoing = False
-    user_input_two()
+    position2 = user_input_two()
+    co_ordinate[position2] = 1
     print(co_ordinate)
     if game_over():
         keepgoing = False
